@@ -25,7 +25,7 @@ const getUsers = (request, response) => {
 const getUserLogin = (request, response) => {
   const id = parseInt(request.params.id)
 
-  pool.query('SELECT * FROM users WHERE email = $1 and password=$2', [email], [password], (error, results) => {
+  pool.query('SELECT * FROM users WHERE email = $1 and password=$2',  [email, password], (error, results) => {
     if (error) {
       throw error
     }
