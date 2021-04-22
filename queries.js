@@ -55,3 +55,12 @@ const getUcomment = (request, response) => {
     response.status(200).json(results.rows)
   })
 }
+
+
+
+module.exports = {
+  getUsers,
+  getUserLogin,
+  createUser,
+  getUcomment,
+ }
