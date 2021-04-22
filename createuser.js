@@ -1,4 +1,4 @@
-const User = require('./user.js')
+const User = require('./createuser.js')
 app.post('/createuser', User.createuser)
 
 const environment     = process.env.NODE_ENV || 'prod';    
