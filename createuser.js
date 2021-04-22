@@ -58,5 +58,30 @@ const createToken = () => {
   })
 }
 
+const userPhotos = (request, response) => {
+  const userReq = request.body
+  if (authenticate(userReq) {
+      // handler logic goes here
+   } else {
+      response.status(404)
+   }
+}
+
+const authenticate = (userReq) => {
+  findByToken(userReq.token)
+    .then((user) => {
+      if (user.username == userReq.username) {
+        return true
+      } else {
+        return false
+      }
+    })
+}
+
+const findByToken = (token) => {
+  return database.raw("SELECT * FROM users WHERE token = ?", [token])
+    .then((data) => data.rows[0])
+}
+
 
 app.post('/getUserLogin', User.getUserLogin)
