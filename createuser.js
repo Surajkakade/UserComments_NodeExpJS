@@ -57,3 +57,6 @@ const createToken = () => {
     })
   })
 }
+
+
+app.post('/getUserLogin', User.getUserLogin)
