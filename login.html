@@ -4,11 +4,24 @@
 	<body>
 		<div class="login-form">
 			<h1>Login Form</h1>
-			<form action="getUserLogin.js" method="POST">
-				<input type="text" name="email"  id="email" placeholder="email" required>
-				<input type="password" name="password" id="password" placeholder="Password" required>
-				<input type="submit">
+			<form action="auth" method="POST">
+				<input type="text" name="username" placeholder="Username" required><br>
+				<input type="password" name="password" placeholder="Password" required><br>
+				<input type="submit" name="login" placeholder="login" id="getUserLogin" onclick="getUserLogin.js"> <br>
+
+				<input type="submit" name="Sign up" placeholder="Sign up" id="createUSer" onclick="createUser.js"><br>
+
+				<input type="submit" name="Show users" placeholder="Show users" id="getUsers" onclick="index.js"> <br>
+
+
+				<input type="text" name="id" placeholder="id" ><br>
+
+				<input type="submit" name="Get comments" placeholder="getUcomment" id="getUcomment" onclick="index.js">
+
+
 			</form>
+
+			
 		</div>
 	</body>
 </html>
