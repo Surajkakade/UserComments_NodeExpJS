@@ -3,20 +3,27 @@
 	<head> </head>
 	<body>
 		<div class="login-form">
-			<h1>Login Form</h1>
+			<h1>Form</h1>
 			<form action="auth" method="POST">
 				<input type="text" name="username" placeholder="Username" required><br>
 				<input type="password" name="password" placeholder="Password" required><br>
 				<input type="submit" name="login" placeholder="login" id="getUserLogin" onclick="getUserLogin.js"> <br>
 
-				<input type="submit" name="Sign up" placeholder="Sign up" id="createUSer" onclick="createUser.js"><br>
 
-				<input type="submit" name="Show users" placeholder="Show users" id="getUsers" onclick="index.js"> <br>
+
+		<div class="login-form">
+
+				<button type="button" name="Sign up"  id="createUSer" onclick="createUser.js"> Sign up</button><br>
+
+				<button type="button" name="Show users" id="getUsers" onclick="index.js">Show users </button><br>
 
 
 				<input type="text" name="id" placeholder="id" ><br>
 
-				<input type="submit" name="Get comments" placeholder="getUcomment" id="getUcomment" onclick="index.js">
+
+				<button type="button" name="Get comments" id="getUcomment" onclick="index.js">Get User Comment</button>
+
+
 
 
 			</form>
