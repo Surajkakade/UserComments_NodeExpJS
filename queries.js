@@ -15,6 +15,11 @@ const getUsers = (request, response) => {
     if (error) {
       throw error
     }
+   model.findAll({
+      limit: 2,
+      offset: 3,
+      where: {}, 
+      });
     response.status(200).json(results.rows)
   })
 }
